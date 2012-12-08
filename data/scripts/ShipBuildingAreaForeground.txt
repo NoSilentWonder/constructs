@@ -1,0 +1,99 @@
+Number of Textures: 12
+environment/tiles/blank.png
+obj/Decorative/ForeTree1.png
+obj/Decorative/ForeTree2.png
+obj/Decorative/ForeTree3.png
+obj/Decorative/ForeTree4.png
+obj/Decorative/ForeTree5.png
+obj/Decorative/ForeTree6.png
+obj/Decorative/ForeTree7.png
+obj/Decorative/ForeShrub1.png
+obj/Decorative/ForeShrub2.png
+obj/Decorative/ForeShrub3.png
+obj/Decorative/ForeShrub4.png
+
+Map size: 25
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+Number of displayed tiles: 4
+Tile width: 1024
+Tile height: 1
+Starting position: 0
+Screen offset: -512, 768
+
+Number of decorative sprites: 7
+
+map position: 9
+sprite width: 512
+sprite height: 768
+x offset: 100
+y offset: -384
+obj/Decorative/ForeTree7.png
+
+map position: 9
+sprite width: 512
+sprite height: 768
+x offset: -30
+y offset: -384
+obj/Decorative/ForeTree4.png
+
+map position: 10
+sprite width: 512
+sprite height: 768
+x offset: 200
+y offset: -384
+obj/Decorative/ForeTree2.png
+
+map position: 11
+sprite width: 512
+sprite height: 768
+x offset: 0
+y offset: -384
+obj/Decorative/ForeTree3.png
+
+map position: 13
+sprite width: 512
+sprite height: 768
+x offset: -200
+y offset: -384
+obj/Decorative/ForeTree4.png
+
+map position: 13
+sprite width: 512
+sprite height: 768
+x offset: -510
+y offset: -384
+obj/Decorative/ForeTree6.png
+
+map position: 13
+sprite width: 512
+sprite height: 768
+x offset: 200
+y offset: -384
+obj/Decorative/ForeTree3.png
+
+Number of interactive sprites: 0

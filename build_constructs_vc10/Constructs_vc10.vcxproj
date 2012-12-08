@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="X86 Debug|Win32">
+      <Configuration>X86 Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="X86 Release|Win32">
+      <Configuration>X86 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RVCT ARM Debug|Win32">
+      <Configuration>RVCT ARM Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RVCT ARM Release|Win32">
+      <Configuration>RVCT ARM Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC ARM Debug|Win32">
+      <Configuration>GCC ARM Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC ARM Release|Win32">
+      <Configuration>GCC ARM Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC MIPS Debug|Win32">
+      <Configuration>GCC MIPS Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="GCC MIPS Release|Win32">
+      <Configuration>GCC MIPS Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    </ItemGroup>
+
+    <PropertyGroup Label="Globals">
+      <ProjectGuid>{52F04D33-EED5-4EA7-8123-B57083AB4532}</ProjectGuid>
+      <Keyword>Win32Proj</Keyword>
+      <RootNamespace>RealProj</RootNamespace>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='X86 Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='X86 Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+    <ImportGroup Label="ExtensionSettings">
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='X86 Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='X86 Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <PropertyGroup Label="UserMacros" />
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='X86 Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_Constructs_vc10_x86\</IntDir>
+      <OutDir>Debug_Constructs_vc10_x86\</OutDir>
+      <TargetName>Constructs</TargetName>
+      <TargetExt>.s86</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='X86 Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_Constructs_vc10_x86\</IntDir>
+      <OutDir>Release_Constructs_vc10_x86\</OutDir>
+      <TargetName>Constructs</TargetName>
+      <TargetExt>.s86</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_Constructs_vc10_arm\</IntDir>
+      <OutDir>Debug_Constructs_vc10_arm\</OutDir>
+      <TargetName>Constructs</TargetName>
+      <TargetExt>.s3e</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_Constructs_vc10_arm\</IntDir>
+      <OutDir>Release_Constructs_vc10_arm\</OutDir>
+      <TargetName>Constructs</TargetName>
+      <TargetExt>.s3e</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_Constructs_vc10_gcc_arm\</IntDir>
+      <OutDir>Debug_Constructs_vc10_gcc_arm\</OutDir>
+      <TargetName>Constructs</TargetName>
+      <TargetExt>.s3e</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_Constructs_vc10_gcc_arm\</IntDir>
+      <OutDir>Release_Constructs_vc10_gcc_arm\</OutDir>
+      <TargetName>Constructs</TargetName>
+      <TargetExt>.s3e</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_Constructs_vc10_gcc_mips\</IntDir>
+      <OutDir>Debug_Constructs_vc10_gcc_mips\</OutDir>
+      <TargetName>Constructs</TargetName>
+      <TargetExt>.so</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_Constructs_vc10_gcc_mips\</IntDir>
+      <OutDir>Release_Constructs_vc10_gcc_mips\</OutDir>
+      <TargetName>Constructs</TargetName>
+      <TargetExt>.so</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='X86 Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source;c:/marmalade/5.2/modules/iwutil/h;c:/marmalade/5.2/modules/derbh/h;c:/marmalade/5.2/modules/iwgeom/h;c:/marmalade/5.2/modules/iwresmanager/h;c:/marmalade/5.2/modules/iwgl/h;c:/marmalade/5.2/modules/iwgx/h;c:/marmalade/5.2/modules/iwgraphics/h;c:/marmalade/5.2/modules/iwgxfont/h;c:/marmalade/5.2/modules/iw2d/h;c:/marmalade/5.2/s3e/h;c:/marmalade/5.2/s3e/h/ext;c:/marmalade/5.2/s3e/h/std;c:/marmalade/5.2/s3e/h/std/c++;c:/marmalade/5.2/s3e/h/ext_legacy;c:/marmalade/5.2/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12</AdditionalOptions>
+      <AdditionalDependencies>vc6_compat.lib;iwutil_d.lib;derbh_d.lib;iwgeom_d.lib;iwresmanager_d.lib;ATI_Compress_MT_VC7.lib;iwgx_d.lib;iwgl_d.lib;iwgraphics_d.lib;iwgxfont_d.lib;iw2d_d.lib;s3e_cpp_vc8_d.lib;s3e_d.lib;c:/marmalade/5.2/s3e/lib/x86/s3e_api.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/marmalade/5.2/modules/iwutil/lib/x86;c:/marmalade/5.2/modules/derbh/lib/x86;c:/marmalade/5.2/modules/iwgeom/lib/x86;c:/marmalade/5.2/modules/iwresmanager/lib/x86;c:/marmalade/5.2/modules/iwgx/atitools;c:/marmalade/5.2/modules/iwgx/lib/x86;c:/marmalade/5.2/modules/iwgl/lib/x86;c:/marmalade/5.2/modules/iwgraphics/lib/x86;c:/marmalade/5.2/modules/iwgxfont/lib/x86;c:/marmalade/5.2/modules/iw2d/lib/x86;c:/marmalade/5.2/s3e/lib/x86</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol>DllEntryPoint</EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\5.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='X86 Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source;c:/marmalade/5.2/modules/iwutil/h;c:/marmalade/5.2/modules/derbh/h;c:/marmalade/5.2/modules/iwgeom/h;c:/marmalade/5.2/modules/iwresmanager/h;c:/marmalade/5.2/modules/iwgl/h;c:/marmalade/5.2/modules/iwgx/h;c:/marmalade/5.2/modules/iwgraphics/h;c:/marmalade/5.2/modules/iwgxfont/h;c:/marmalade/5.2/modules/iw2d/h;c:/marmalade/5.2/s3e/h;c:/marmalade/5.2/s3e/h/ext;c:/marmalade/5.2/s3e/h/std;c:/marmalade/5.2/s3e/h/std/c++;c:/marmalade/5.2/s3e/h/ext_legacy;c:/marmalade/5.2/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12</AdditionalOptions>
+      <AdditionalDependencies>vc6_compat.lib;iwutil.lib;derbh.lib;iwgeom.lib;iwresmanager.lib;ATI_Compress_MT_VC7.lib;iwgx.lib;iwgl.lib;iwgraphics.lib;iwgxfont.lib;iw2d.lib;s3e_cpp_vc8.lib;s3e.lib;c:/marmalade/5.2/s3e/lib/x86/s3e_api.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/marmalade/5.2/modules/iwutil/lib/x86;c:/marmalade/5.2/modules/derbh/lib/x86;c:/marmalade/5.2/modules/iwgeom/lib/x86;c:/marmalade/5.2/modules/iwresmanager/lib/x86;c:/marmalade/5.2/modules/iwgx/atitools;c:/marmalade/5.2/modules/iwgx/lib/x86;c:/marmalade/5.2/modules/iwgl/lib/x86;c:/marmalade/5.2/modules/iwgraphics/lib/x86;c:/marmalade/5.2/modules/iwgxfont/lib/x86;c:/marmalade/5.2/modules/iw2d/lib/x86;c:/marmalade/5.2/s3e/lib/x86</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol>DllEntryPoint</EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\5.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='__invalid__rvct' tooltype=rvct_compiler --enum_is_int --unsigned_chars --interleave --diag_remark=1,9,111,174,128,177,196,381,550,611,815,1293,1295,1299,1300,1304,3017,3052,390 --apcs=/noropi --library_interface=aeabi_glibc --no-hide-all --no_unaligned_access --no_exceptions --fpu=softvfp --apcs=/interwork --cpu=4T --no-rvct -Jc:/MARMAL~1/5.2/s3e/h/std --asm --cppflag=--cpp -g -O0 --no_inline --diag_style=ide --default_extension=obj " /FD  /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source;c:/marmalade/5.2/modules/iwutil/h;c:/marmalade/5.2/modules/derbh/h;c:/marmalade/5.2/modules/iwgeom/h;c:/marmalade/5.2/modules/iwresmanager/h;c:/marmalade/5.2/modules/iwgl/h;c:/marmalade/5.2/modules/iwgx/h;c:/marmalade/5.2/modules/iwgraphics/h;c:/marmalade/5.2/modules/iwgxfont/h;c:/marmalade/5.2/modules/iw2d/h;c:/marmalade/5.2/s3e/h;c:/marmalade/5.2/s3e/h/ext;c:/marmalade/5.2/s3e/h/std;c:/marmalade/5.2/s3e/h/std/c++;c:/marmalade/5.2/s3e/h/ext_legacy;c:/marmalade/5.2/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='__invalid__rvct' tooltype=rvct_linker --list='$(OutDir)/Constructs.map' --diag_suppress=6331,6780,6340 --no_locals --datacompressor=off --remove --symbols --unmangled --callgraph --map --info=sizes,totals,inline,tailreorder,veneers --no-rvct --scatter='c:/marmalade/5.2/s3e/makefile_builder/templates/rvct_linker_script' libiwutil_d.a libderbh_d.a libiwgeom_d.a libiwresmanager_d.a libiwgx_d.a iwgl_d.a libiwgraphics_d.a libiwgxfont_d.a libiw2d_d.a s3e_cpp_d.a s3e_d.a s3e_d.a(iwcrt.o) --plink:--arch=ARM4T"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/marmalade/5.2/modules/iwutil/lib/arm;c:/marmalade/5.2/modules/derbh/lib/arm;c:/marmalade/5.2/modules/iwgeom/lib/arm;c:/marmalade/5.2/modules/iwresmanager/lib/arm;c:/marmalade/5.2/modules/iwgx/atitools;c:/marmalade/5.2/modules/iwgx/lib/arm;c:/marmalade/5.2/modules/iwgl/lib/arm;c:/marmalade/5.2/modules/iwgraphics/lib/arm;c:/marmalade/5.2/modules/iwgxfont/lib/arm;c:/marmalade/5.2/modules/iw2d/lib/arm;c:/marmalade/5.2/s3e/lib/arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\5.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='__invalid__rvct' tooltype=rvct_compiler --enum_is_int --unsigned_chars --interleave --diag_remark=1,9,111,174,128,177,196,381,550,611,815,1293,1295,1299,1300,1304,3017,3052,390 --apcs=/noropi --library_interface=aeabi_glibc --no-hide-all --no_unaligned_access --no_exceptions --fpu=softvfp --apcs=/interwork --cpu=4T --no-rvct -Jc:/MARMAL~1/5.2/s3e/h/std --asm --cppflag=--cpp --split_sections -Otime -O3 --diag_style=ide --default_extension=obj " /FD  /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source;c:/marmalade/5.2/modules/iwutil/h;c:/marmalade/5.2/modules/derbh/h;c:/marmalade/5.2/modules/iwgeom/h;c:/marmalade/5.2/modules/iwresmanager/h;c:/marmalade/5.2/modules/iwgl/h;c:/marmalade/5.2/modules/iwgx/h;c:/marmalade/5.2/modules/iwgraphics/h;c:/marmalade/5.2/modules/iwgxfont/h;c:/marmalade/5.2/modules/iw2d/h;c:/marmalade/5.2/s3e/h;c:/marmalade/5.2/s3e/h/ext;c:/marmalade/5.2/s3e/h/std;c:/marmalade/5.2/s3e/h/std/c++;c:/marmalade/5.2/s3e/h/ext_legacy;c:/marmalade/5.2/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='__invalid__rvct' tooltype=rvct_linker --list='$(OutDir)/Constructs.map' --diag_suppress=6331,6780,6340 --no_locals --datacompressor=off --remove --symbols --unmangled --callgraph --map --info=sizes,totals,inline,tailreorder,veneers --no-rvct --scatter='c:/marmalade/5.2/s3e/makefile_builder/templates/rvct_linker_script' libiwutil.a libderbh.a libiwgeom.a libiwresmanager.a libiwgx.a iwgl.a libiwgraphics.a libiwgxfont.a libiw2d.a s3e_cpp.a s3e.a s3e.a(iwcrt.o) --plink:--arch=ARM4T"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/marmalade/5.2/modules/iwutil/lib/arm;c:/marmalade/5.2/modules/derbh/lib/arm;c:/marmalade/5.2/modules/iwgeom/lib/arm;c:/marmalade/5.2/modules/iwresmanager/lib/arm;c:/marmalade/5.2/modules/iwgx/atitools;c:/marmalade/5.2/modules/iwgx/lib/arm;c:/marmalade/5.2/modules/iwgl/lib/arm;c:/marmalade/5.2/modules/iwgraphics/lib/arm;c:/marmalade/5.2/modules/iwgxfont/lib/arm;c:/marmalade/5.2/modules/iw2d/lib/arm;c:/marmalade/5.2/s3e/lib/arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\5.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='c:/marmalade/5.2/s3e/gcc/bin/arm-none-eabi-gcc.exe' tooltype=gcc_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -ffunction-sections -mstructure-size-boundary=8 -msoft-float -mthumb-interwork -march=armv4t -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -g -O0" /FD  /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source;c:/marmalade/5.2/modules/iwutil/h;c:/marmalade/5.2/modules/derbh/h;c:/marmalade/5.2/modules/iwgeom/h;c:/marmalade/5.2/modules/iwresmanager/h;c:/marmalade/5.2/modules/iwgl/h;c:/marmalade/5.2/modules/iwgx/h;c:/marmalade/5.2/modules/iwgraphics/h;c:/marmalade/5.2/modules/iwgxfont/h;c:/marmalade/5.2/modules/iw2d/h;c:/marmalade/5.2/s3e/h;c:/marmalade/5.2/s3e/h/ext;c:/marmalade/5.2/s3e/h/std;c:/marmalade/5.2/s3e/h/std/c++;c:/marmalade/5.2/s3e/h/ext_legacy;c:/marmalade/5.2/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='c:/marmalade/5.2/s3e/gcc/bin/arm-none-eabi-g++.exe' tooltype=gcc_linker -Wl,-Map='$(OutDir)/Constructs.map' -Wl,--gc-sections -Wl,--as-needed -mthumb-interwork -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Tlinker_script -lc -lm -Wl,--start-group -Wl,--whole-archive -liwutil_d -lderbh_d -liwgeom_d -liwresmanager_d -liwgx_d -liwgraphics_d -liwgxfont_d -liw2d_d -Wl,--no-whole-archive -liwgl_d -ls3e_cpp_d -ls3e_d -ls3estubs -Wl,--end-group --plink:--arch=ARM4T"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/marmalade/5.2/modules/iwutil/lib/arm;c:/marmalade/5.2/modules/derbh/lib/arm;c:/marmalade/5.2/modules/iwgeom/lib/arm;c:/marmalade/5.2/modules/iwresmanager/lib/arm;c:/marmalade/5.2/modules/iwgx/atitools;c:/marmalade/5.2/modules/iwgx/lib/arm;c:/marmalade/5.2/modules/iwgl/lib/arm;c:/marmalade/5.2/modules/iwgraphics/lib/arm;c:/marmalade/5.2/modules/iwgxfont/lib/arm;c:/marmalade/5.2/modules/iw2d/lib/arm;c:/marmalade/5.2/s3e/lib/arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\5.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='c:/marmalade/5.2/s3e/gcc/bin/arm-none-eabi-gcc.exe' tooltype=gcc_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fomit-frame-pointer -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -ffunction-sections -mstructure-size-boundary=8 -msoft-float -mthumb-interwork -march=armv4t -Wno-switch -Wno-psabi -fvisibility=hidden -nostdinc --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -fomit-frame-pointer -O3" /FD  /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source;c:/marmalade/5.2/modules/iwutil/h;c:/marmalade/5.2/modules/derbh/h;c:/marmalade/5.2/modules/iwgeom/h;c:/marmalade/5.2/modules/iwresmanager/h;c:/marmalade/5.2/modules/iwgl/h;c:/marmalade/5.2/modules/iwgx/h;c:/marmalade/5.2/modules/iwgraphics/h;c:/marmalade/5.2/modules/iwgxfont/h;c:/marmalade/5.2/modules/iw2d/h;c:/marmalade/5.2/s3e/h;c:/marmalade/5.2/s3e/h/ext;c:/marmalade/5.2/s3e/h/std;c:/marmalade/5.2/s3e/h/std/c++;c:/marmalade/5.2/s3e/h/ext_legacy;c:/marmalade/5.2/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='c:/marmalade/5.2/s3e/gcc/bin/arm-none-eabi-g++.exe' tooltype=gcc_linker -Wl,-Map='$(OutDir)/Constructs.map' -Wl,--gc-sections -Wl,--as-needed -mthumb-interwork -pie -Wl,--entry=_IwMain -Wl,--no-enum-size-warning -Wl,-Tlinker_script -lc -lm -Wl,--start-group -Wl,--whole-archive -liwutil -lderbh -liwgeom -liwresmanager -liwgx -liwgraphics -liwgxfont -liw2d -Wl,--no-whole-archive -liwgl -ls3e_cpp -ls3e -ls3estubs -Wl,--end-group --plink:--arch=ARM4T"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/marmalade/5.2/modules/iwutil/lib/arm;c:/marmalade/5.2/modules/derbh/lib/arm;c:/marmalade/5.2/modules/iwgeom/lib/arm;c:/marmalade/5.2/modules/iwresmanager/lib/arm;c:/marmalade/5.2/modules/iwgx/atitools;c:/marmalade/5.2/modules/iwgx/lib/arm;c:/marmalade/5.2/modules/iwgl/lib/arm;c:/marmalade/5.2/modules/iwgraphics/lib/arm;c:/marmalade/5.2/modules/iwgxfont/lib/arm;c:/marmalade/5.2/modules/iw2d/lib/arm;c:/marmalade/5.2/s3e/lib/arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\5.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='c:/marmalade/5.2/tools/gcc/mips/bin/mips-linux-gnu-gcc.exe' tooltype=gcc_mips_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -EL -mips1 -mabi=32 -Wno-switch -fvisibility=hidden -nostdinc -fPIC --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -g -O0" /FD  /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source;c:/marmalade/5.2/modules/iwutil/h;c:/marmalade/5.2/modules/derbh/h;c:/marmalade/5.2/modules/iwgeom/h;c:/marmalade/5.2/modules/iwresmanager/h;c:/marmalade/5.2/modules/iwgl/h;c:/marmalade/5.2/modules/iwgx/h;c:/marmalade/5.2/modules/iwgraphics/h;c:/marmalade/5.2/modules/iwgxfont/h;c:/marmalade/5.2/modules/iw2d/h;c:/marmalade/5.2/s3e/h;c:/marmalade/5.2/s3e/h/ext;c:/marmalade/5.2/s3e/h/std;c:/marmalade/5.2/s3e/h/std/c++;c:/marmalade/5.2/s3e/h/ext_legacy;c:/marmalade/5.2/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='c:/marmalade/5.2/tools/gcc/mips/bin/mips-linux-gnu-g++.exe' tooltype=gcc_mips_linker -Wl,-Map='$(OutDir)/Constructs.map' -EL -mips1 -mabi=32 -static-libgcc -Wl,--as-needed -Wl,--no-undefined -Wl,-u_IwMain -Wl,-ug_GameVersionMajor -Wl,-ug_GameVersionMinor -Wl,--entry=_IwMain -shared -Wl,c:/marmalade/5.2/s3e\makefile_builder\templates\mips_linker_script -Wl,-init -Wl,iwcrt_mips_init -Wl,-fini -Wl,iwcrt_mips_fini -Wl,--start-group -Wl,--whole-archive -liwutil_d -lderbh_d -liwgeom_d -liwresmanager_d -liwgx_d -liwgraphics_d -liwgxfont_d -liw2d_d -Wl,--no-whole-archive -liwgl_d -ls3e_cpp_d -ls3e_d -Wl,--end-group"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/marmalade/5.2/modules/iwutil/lib/mips/linux;c:/marmalade/5.2/modules/derbh/lib/mips/linux;c:/marmalade/5.2/modules/iwgeom/lib/mips/linux;c:/marmalade/5.2/modules/iwresmanager/lib/mips/linux;c:/marmalade/5.2/modules/iwgx/atitools;c:/marmalade/5.2/modules/iwgx/lib/mips/linux;c:/marmalade/5.2/modules/iwgl/lib/mips/linux;c:/marmalade/5.2/modules/iwgraphics/lib/mips/linux;c:/marmalade/5.2/modules/iwgxfont/lib/mips/linux;c:/marmalade/5.2/modules/iw2d/lib/mips/linux;c:/marmalade/5.2/s3e/lib/mips/linux</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\5.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions></PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /Fe"s3e-custom-tool='c:/marmalade/5.2/tools/gcc/mips/bin/mips-linux-gnu-gcc.exe' tooltype=gcc_mips_compiler -funsigned-char -fno-strict-aliasing -fno-stack-protector -fno-short-enums -fshort-wchar -Wall -fmessage-length=0 -Wno-unused -Wno-parentheses -save-temps -EL -mips1 -mabi=32 -Wno-switch -fvisibility=hidden -nostdinc -fPIC --cppflag=-Wno-reorder --cppflag=-fvisibility-inlines-hidden --cppflag=-fno-exceptions --cppflag=-nostdinc++ -fomit-frame-pointer -O3" /FD  /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source;c:/marmalade/5.2/modules/iwutil/h;c:/marmalade/5.2/modules/derbh/h;c:/marmalade/5.2/modules/iwgeom/h;c:/marmalade/5.2/modules/iwresmanager/h;c:/marmalade/5.2/modules/iwgl/h;c:/marmalade/5.2/modules/iwgx/h;c:/marmalade/5.2/modules/iwgraphics/h;c:/marmalade/5.2/modules/iwgxfont/h;c:/marmalade/5.2/modules/iw2d/h;c:/marmalade/5.2/s3e/h;c:/marmalade/5.2/s3e/h/ext;c:/marmalade/5.2/s3e/h/std;c:/marmalade/5.2/s3e/h/std/c++;c:/marmalade/5.2/s3e/h/ext_legacy;c:/marmalade/5.2/s3e/h/legacy;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions> /include:_IwMain /include:_raise /include:_DllEntryPoint@12/COMMENT:"s3e-custom-tool='c:/marmalade/5.2/tools/gcc/mips/bin/mips-linux-gnu-g++.exe' tooltype=gcc_mips_linker -Wl,-Map='$(OutDir)/Constructs.map' -EL -mips1 -mabi=32 -static-libgcc -Wl,--as-needed -Wl,--no-undefined -Wl,-u_IwMain -Wl,-ug_GameVersionMajor -Wl,-ug_GameVersionMinor -Wl,--entry=_IwMain -shared -Wl,c:/marmalade/5.2/s3e\makefile_builder\templates\mips_linker_script -Wl,-init -Wl,iwcrt_mips_init -Wl,-fini -Wl,iwcrt_mips_fini -Wl,--start-group -Wl,--whole-archive -liwutil -lderbh -liwgeom -liwresmanager -liwgx -liwgraphics -liwgxfont -liw2d -Wl,--no-whole-archive -liwgl -ls3e_cpp -ls3e -Wl,--end-group"</AdditionalOptions>
+      <AdditionalDependencies></AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:/marmalade/5.2/modules/iwutil/lib/mips/linux;c:/marmalade/5.2/modules/derbh/lib/mips/linux;c:/marmalade/5.2/modules/iwgeom/lib/mips/linux;c:/marmalade/5.2/modules/iwresmanager/lib/mips/linux;c:/marmalade/5.2/modules/iwgx/atitools;c:/marmalade/5.2/modules/iwgx/lib/mips/linux;c:/marmalade/5.2/modules/iwgl/lib/mips/linux;c:/marmalade/5.2/modules/iwgraphics/lib/mips/linux;c:/marmalade/5.2/modules/iwgxfont/lib/mips/linux;c:/marmalade/5.2/modules/iw2d/lib/mips/linux;c:/marmalade/5.2/s3e/lib/mips/linux</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>libcmt</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+      <PostBuildEvent>
+        <Command>echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;chdir /d &quot;c:\marmalade\5.2\s3e\tools&quot;&#x0D;&#x0A;C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py &quot;$(TargetPath)&quot;&#x0D;&#x0A;</Command>
+      </PostBuildEvent>
+    </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/iterator" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/stdio_streambuf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cassert" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/istream" />
+    <None Include="c:/marmalade/5.2/modules/iw2d/docs/iw2d_public.defines.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/string" />
+    <None Include="c:/marmalade/5.2/modules/iw2d/docs/iw2d.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/iomanip" />
+    <None Include="c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/vector" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/climits" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/new" />
+    <None Include="c:/marmalade/5.2/modules/iwgxfont/docs/iwgxfont.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/queue" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/fstream" />
+    <None Include="c:/marmalade/5.2/modules/iwgx/h/IwClip.inl" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/deque" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cwchar" />
+    <None Include="c:/marmalade/5.2/modules/iwutil/iwutil.mkf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/csignal" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/pthread_alloc" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/hash_map" />
+    <None Include="c:/marmalade/5.2/s3e/s3e.mkf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/map" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/typeinfo" />
+    <None Include="c:/marmalade/5.2/modules/iw2d/iw2d.mkf" />
+    <None Include="c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/valarray" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/iosfwd" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/list" />
+    <None Include="c:/marmalade/5.2/s3e/s3e.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/numeric" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/iostream" />
+    <None Include="c:/marmalade/5.2/modules/derbh/derbh.mkf" />
+    <None Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/data/app.icf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cstring" />
+    <None Include="c:/marmalade/5.2/modules/iwutil/docs/iwutil.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cstdio" />
+    <None Include="c:/marmalade/5.2/modules/iwgx/docs/iwgx_public.defines.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/slist" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cstdlib" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cstddef" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/ostream" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cwctype" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/set" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/locale" />
+    <None Include="c:/marmalade/5.2/modules/iwgl/docs/iwgl.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/bitset" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/limits" />
+    <None Include="c:/marmalade/5.2/modules/iwgx/docs/iwgx.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cstdarg" />
+    <None Include="c:/marmalade/5.2/modules/iwgeom/docs/iwgeom.config.txt" />
+    <None Include="c:/marmalade/5.2/modules/iwgx/iwgx.mkf" />
+    <None Include="c:/marmalade/5.2/modules/iwgl/iwgl.mkf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/strstream" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/exception" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/rope" />
+    <None Include="c:/marmalade/5.2/modules/iwgxfont/docs/iwgxfont_public.defines.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cctype" />
+    <None Include="c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/complex" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/algorithm" />
+    <None Include="c:/marmalade/5.2/s3e/s3e.icf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/ios" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/stack" />
+    <None Include="c:/marmalade/5.2/modules/iwresmanager/docs/iwresmanager.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cfloat" />
+    <None Include="c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf" />
+    <None Include="c:/marmalade/5.2/modules/iwgraphics/docs/iwgraphics.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/ctime" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/sstream" />
+    <None Include="c:/marmalade/5.2/modules/derbh/docs/derbh.config.txt" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/streambuf" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/functional" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/utility" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/memory" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/hash_set" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cmath" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/cerrno" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/clocale" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/csetjmp" />
+    <None Include="c:/marmalade/5.2/s3e/h/std/c++/stdexcept" />
+    <CustomBuild Include="..\Constructs.mkb">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='X86 Debug|Win32'">"C:\Marmalade\5.2\s3e\python\python.exe" "C:\Marmalade\5.2\s3e\makefile_builder\mkb.py" "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/Constructs.mkb" "--default-buildenv=vc10" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='X86 Debug|Win32'">Constructs_vc10.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='X86 Debug|Win32'">c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/5.2/modules/iwutil/iwutil.mkf;c:/marmalade/5.2/s3e/s3e.mkf;c:/marmalade/5.2/modules/iw2d/iw2d.mkf;c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf;c:/marmalade/5.2/modules/derbh/derbh.mkf;c:/marmalade/5.2/modules/iwgx/iwgx.mkf;c:/marmalade/5.2/modules/iwgl/iwgl.mkf;c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='X86 Release|Win32'">"C:\Marmalade\5.2\s3e\python\python.exe" "C:\Marmalade\5.2\s3e\makefile_builder\mkb.py" "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/Constructs.mkb" "--default-buildenv=vc10" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='X86 Release|Win32'">Constructs_vc10.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='X86 Release|Win32'">c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/5.2/modules/iwutil/iwutil.mkf;c:/marmalade/5.2/s3e/s3e.mkf;c:/marmalade/5.2/modules/iw2d/iw2d.mkf;c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf;c:/marmalade/5.2/modules/derbh/derbh.mkf;c:/marmalade/5.2/modules/iwgx/iwgx.mkf;c:/marmalade/5.2/modules/iwgl/iwgl.mkf;c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">"C:\Marmalade\5.2\s3e\python\python.exe" "C:\Marmalade\5.2\s3e\makefile_builder\mkb.py" "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/Constructs.mkb" "--default-buildenv=vc10" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">Constructs_vc10.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Debug|Win32'">c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/5.2/modules/iwutil/iwutil.mkf;c:/marmalade/5.2/s3e/s3e.mkf;c:/marmalade/5.2/modules/iw2d/iw2d.mkf;c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf;c:/marmalade/5.2/modules/derbh/derbh.mkf;c:/marmalade/5.2/modules/iwgx/iwgx.mkf;c:/marmalade/5.2/modules/iwgl/iwgl.mkf;c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">"C:\Marmalade\5.2\s3e\python\python.exe" "C:\Marmalade\5.2\s3e\makefile_builder\mkb.py" "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/Constructs.mkb" "--default-buildenv=vc10" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">Constructs_vc10.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RVCT ARM Release|Win32'">c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/5.2/modules/iwutil/iwutil.mkf;c:/marmalade/5.2/s3e/s3e.mkf;c:/marmalade/5.2/modules/iw2d/iw2d.mkf;c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf;c:/marmalade/5.2/modules/derbh/derbh.mkf;c:/marmalade/5.2/modules/iwgx/iwgx.mkf;c:/marmalade/5.2/modules/iwgl/iwgl.mkf;c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">"C:\Marmalade\5.2\s3e\python\python.exe" "C:\Marmalade\5.2\s3e\makefile_builder\mkb.py" "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/Constructs.mkb" "--default-buildenv=vc10" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">Constructs_vc10.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC ARM Debug|Win32'">c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/5.2/modules/iwutil/iwutil.mkf;c:/marmalade/5.2/s3e/s3e.mkf;c:/marmalade/5.2/modules/iw2d/iw2d.mkf;c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf;c:/marmalade/5.2/modules/derbh/derbh.mkf;c:/marmalade/5.2/modules/iwgx/iwgx.mkf;c:/marmalade/5.2/modules/iwgl/iwgl.mkf;c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">"C:\Marmalade\5.2\s3e\python\python.exe" "C:\Marmalade\5.2\s3e\makefile_builder\mkb.py" "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/Constructs.mkb" "--default-buildenv=vc10" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">Constructs_vc10.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC ARM Release|Win32'">c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/5.2/modules/iwutil/iwutil.mkf;c:/marmalade/5.2/s3e/s3e.mkf;c:/marmalade/5.2/modules/iw2d/iw2d.mkf;c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf;c:/marmalade/5.2/modules/derbh/derbh.mkf;c:/marmalade/5.2/modules/iwgx/iwgx.mkf;c:/marmalade/5.2/modules/iwgl/iwgl.mkf;c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">"C:\Marmalade\5.2\s3e\python\python.exe" "C:\Marmalade\5.2\s3e\makefile_builder\mkb.py" "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/Constructs.mkb" "--default-buildenv=vc10" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">Constructs_vc10.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Debug|Win32'">c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/5.2/modules/iwutil/iwutil.mkf;c:/marmalade/5.2/s3e/s3e.mkf;c:/marmalade/5.2/modules/iw2d/iw2d.mkf;c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf;c:/marmalade/5.2/modules/derbh/derbh.mkf;c:/marmalade/5.2/modules/iwgx/iwgx.mkf;c:/marmalade/5.2/modules/iwgl/iwgl.mkf;c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">"C:\Marmalade\5.2\s3e\python\python.exe" "C:\Marmalade\5.2\s3e\makefile_builder\mkb.py" "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/Constructs.mkb" "--default-buildenv=vc10" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">Constructs_vc10.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='GCC MIPS Release|Win32'">c:/marmalade/5.2/modules/iwgeom/iwgeom.mkf;c:/marmalade/5.2/modules/iwutil/iwutil.mkf;c:/marmalade/5.2/s3e/s3e.mkf;c:/marmalade/5.2/modules/iw2d/iw2d.mkf;c:/marmalade/5.2/modules/iwgraphics/iwgraphics.mkf;c:/marmalade/5.2/modules/derbh/derbh.mkf;c:/marmalade/5.2/modules/iwgx/iwgx.mkf;c:/marmalade/5.2/modules/iwgl/iwgl.mkf;c:/marmalade/5.2/modules/iwresmanager/iwresmanager.mkf;c:/marmalade/5.2/modules/iwgxfont/iwgxfont.mkf</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Button.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomPlane.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3e.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/errno.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwSingleton.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/dlfcn.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Robot.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sched.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomFMat2D.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/grp.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Sprite.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/iostream.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwMemory.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModel.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgl/h/IwGL.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/streambuf.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxError.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeom.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomVec4.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/dir.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/locale.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwManaged.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/LevelList.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eCompass.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/ipc.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/fnmatch.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxState.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eAudio.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eSurface.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eWindow.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwBuffer.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eOSExec.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwResHandlerGEO.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxTransformSW.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxMetrics.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/GLES2/gl2platform.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwresmanager/h/IwResManagerClass.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/TitleState.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/time.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iw2d/h/Iw2D.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomVec2.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/sendfile.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/malloc.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/stdarg.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomCore.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/endian.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/glob.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModelBuildInfo.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eCamera.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwGraphicsFuncs.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwGraphicsMetrics.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/pthread.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwMemManagerDL.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwString.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Game.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/pthread_types.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/getopt.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwOptimiseARM.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/times.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomFSphere.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwTypes.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/SoundEffect.hpp" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/AnimatedSprite.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eCompression.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/MenuState.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/langinfo.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3edebugHeap.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/AirplayVersion.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/GLES2/gl2extimg.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomSqrt.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/syslog.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgxfont/h/IwGxFontTypes.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eOSReadString.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Alien.hpp" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Level1.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwOptimiseSpeed.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/msl_string.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/select.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/signal.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sigcontext.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eClipboard.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxFuncTable.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Touch.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eDebug.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/socket.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/GLES/glext.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/unistd.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Condition.hpp" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Video.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/fstream.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3ePointer.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/CircularButton.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eGL.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomFVec2.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomSVec4.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/poll.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwMatAnim.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomFVec4.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGx.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/GLES2/gl2.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/shm.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxRenderSW.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/stdiostream.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/mem.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/utime.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomMat2D.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/un.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwImage.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eImagePicker.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/stdlib.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwCopyingPtr.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/stddef.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/setjmp_win32.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxPrint.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomSVec2.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModelImporter.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/wchar.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eCameraCapture.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/EGL/eglext.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModelBlock.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwresmanager/h/IwResHandlerImage.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/strstream.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgl/h/IwGLExt.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModelBlockSW.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwClassFactory.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/file.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/ShipLevel.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eSMS.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/limits.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eLibrary.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwMaterial.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxSurface.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eSocket.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwAutoFile.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eVibra.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/poll.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eThread.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/ucontext.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/time.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eSoundRecord.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwFibre.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eVersion.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Puzzle.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgxfont/h/IwGxFontGlyph.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eTypes.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/signal.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/termios.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/BuildPieceSet.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwGraphicsState.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eLocation.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Input.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwMemBucketHelpers.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eHash.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/typeinfo.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomFMat.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModelBlockGen.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Level.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/derbh/h/derbh.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwMenu.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwresmanager/h/IwResHandlerITX.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwArray.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwUTF8.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/math_rvct.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwUtil.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/wctype.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Quad.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/assert.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/mman.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwRandom.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/libgen.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/utsname.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/wait.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/param.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwDivide.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwresmanager/h/IwResManager.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomSQuat.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/RubblePuzzle.hpp" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/ScrollingLayer.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwList.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/inttypes.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/dirent.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomVec3.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwMath.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomQuat.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/GLES/glplatform.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/BuildPieceSilhouette.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/alloca.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/State.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwresmanager/h/IwResHandler.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwResHandlerMTL.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/RobotBuildingPuzzle.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomBBox.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eContacts.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eLicense.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwTextParser.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eTimer.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomVec.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwSerialise.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModelBlockGL.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/GLES2/gl2ext.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwChar.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eSound.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwTexture.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eIOSBackgroundAudio.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/exception.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/derbh/h/dzio.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/GLES/gl.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwRuntime.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/BuildPiece.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwColour.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/ostream.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/types.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/ifaddrs.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/rlocks.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/ioctl.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwresmanager/h/IwResHandlerGROUP.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwEvent.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwOptimiseSize.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/iconv.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eDevice.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomSphere.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eConfig.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwHashString.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/stat.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/byteswap.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwUtilInitTerm.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/pthread.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwMemBucket.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxMotionBlur.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwVariableBitField.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/sem.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgxfont/h/IwGxFontState.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/stdio.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxDrawSW.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/ShipBuildingArea.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/new.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eEMail.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eVideo.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/pwd.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwClip.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxShaderTechnique.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwCore.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgxfont/h/IwGxFontPreparedData.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwAllocator.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwPath.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/GravityHose.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eAccelerometer.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/setjmp.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwFile.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwTextParseable.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/istream.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/stdint.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/semaphore.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/GraphicsObject.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomFBBox.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModelExt.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgxfont/h/IwGxFontContainer.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomSVec3.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/PlayState.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eExt.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomFVec3.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eMetrics.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgxfont/h/IwGxFont.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eSecureStorage.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/string.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwResource.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxDebug.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/float.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/iomanip.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwKeymap.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwDebug.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwOptimiseThumb.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomMenu.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwDivTable.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/ctype.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomMat.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwresmanager/h/IwResGroup.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/signal.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/EscapePodBuildingPuzzle.hpp" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/FlickableObject.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwManagedList.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/MusicPlayer.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/prctl.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxStream.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwDebugPrim.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Material.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomLegacy.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwTPage.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwresmanager/h/IwResSerialise.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eCrypto.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eKeyboard.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/fcntl.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwGraphics.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgraphics/h/IwModelBuilder.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/memory.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/EGL/egl.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomIntersect.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwTextParserITX.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/GLES/egl.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/TestState.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/stl_user_config.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwProfileMenu.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/MarmaladeVersion.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/ios.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgeom/h/IwGeomFQuat.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/EGL/eglplatform.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/math_gcc.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eMemory.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/strings.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/s3eFile.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/c++/type_traits.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwgx/h/IwGxTypes.h" />
+    <ClInclude Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/QuadButton.hpp" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/resource.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/netdb.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/ext/s3eAndroidJNI.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/math.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/stdbool.h" />
+    <ClInclude Include="c:/marmalade/5.2/s3e/h/std/sys/uio.h" />
+    <ClInclude Include="c:/marmalade/5.2/modules/iwutil/h/IwUncopyable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/ShipLevel.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/CircularButton.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Input.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/BuildPieceSet.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Robot.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/BuildPieceSilhouette.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Material.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/TestState.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/main.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/BuildPiece.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Sprite.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/GravityHose.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/GraphicsObject.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Video.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/RobotBuildingPuzzle.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Level1.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/ScrollingLayer.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/RubblePuzzle.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/TitleState.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/EscapePodBuildingPuzzle.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/MusicPlayer.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Touch.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/QuadButton.cpp" />
+    <ClCompile Include="c:/marmalade/5.2/modules/derbh/source/DerbhAutoInit.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Quad.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/AnimatedSprite.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/SoundEffect.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/PlayState.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Game.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/FlickableObject.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Alien.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/ShipBuildingArea.cpp" />
+    <ClCompile Include="C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/MenuState.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

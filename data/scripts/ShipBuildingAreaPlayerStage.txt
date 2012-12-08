@@ -1,0 +1,97 @@
+Number of Textures: 9
+environment/tiles/player_stage1.png
+environment/tiles/player_stage2.png
+environment/tiles/player_stage3.png
+environment/tiles/player_stage4.png
+environment/tiles/player_stage5.png
+environment/tiles/player_stage6.png
+environment/tiles/player_stage7.png
+environment/tiles/player_stage8.png
+environment/tiles/player_stage9.png
+
+Map size: 12
+5
+4
+2
+3
+7
+8
+5
+6
+4
+0
+3
+2
+
+Number of displayed tiles: 6
+Tile width: 512
+Tile height: 512
+Starting position: 0
+Screen offset: -256, 740
+
+Number of decorative sprites: 9
+
+map position: 2
+sprite width: 1024
+sprite height: 768
+x offset: -256
+y offset: -354
+obj/Decorative/ship_ext.png
+
+map position: 4
+sprite width: 374
+sprite height: 444
+x offset: -112
+y offset: -385
+obj/Decorative/Tree3.png
+
+map position: 7
+sprite width: 374
+sprite height: 444
+x offset: 48
+y offset: -400
+obj/Decorative/Tree2.png
+
+map position: 7
+sprite width: 51
+sprite height: 61
+x offset: 100
+y offset: -205
+obj/Decorative/Grass2.png
+
+map position: 7
+sprite width: 400
+sprite height: 400
+x offset: -202
+y offset: -310
+obj/Decorative/RockFormation2.png
+
+map position: 8
+sprite width: 235
+sprite height: 622
+x offset: 90
+y offset: -460
+obj/Decorative/Tree1.png
+
+map position: 8
+sprite width: 35
+sprite height: 57
+x offset: 135
+y offset: -190
+obj/Decorative/Flower2.png
+
+map position: 8
+sprite width: 374
+sprite height: 444
+x offset: 130
+y offset: -400
+obj/Decorative/Tree3.png
+
+map position: 8
+sprite width: 400
+sprite height: 700
+x offset: -114
+y offset: -370
+obj/Decorative/Tree5.png
+
+Number of interactive sprites: 0

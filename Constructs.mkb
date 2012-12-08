@@ -1,0 +1,133 @@
+options
+{
+    s3e-data-dir="data"
+}
+
+includepath source
+
+files
+{
+	[Main]
+    (source)
+    main.cpp
+	Game.hpp
+	Game.cpp
+	
+	["Game States"]
+	(source)
+	Condition.hpp
+	State.hpp
+	TitleState.hpp
+	TitleState.cpp
+	MenuState.hpp
+	MenuState.cpp	
+	PlayState.hpp
+	PlayState.cpp
+	TestState.hpp
+	TestState.cpp
+	
+	["Graphics"]
+	(source)
+	GraphicsObject.hpp
+	GraphicsObject.cpp
+	Quad.hpp
+	Quad.cpp
+	Material.hpp
+	Material.cpp
+	Sprite.hpp
+	Sprite.cpp
+	AnimatedSprite.hpp
+	AnimatedSprite.cpp
+	
+	["Input"]
+	(source)
+	Input.hpp
+	Input.cpp
+	Touch.hpp
+	Touch.cpp
+	
+	["Buttons"]
+	(source)
+	Button.hpp
+	CircularButton.hpp
+	CircularButton.cpp
+	QuadButton.hpp
+	QuadButton.cpp
+
+	["Environment"]
+	(source)
+	ScrollingLayer.hpp
+	ScrollingLayer.cpp
+
+	["Characters"]
+	(source)
+	Alien.hpp
+	Alien.cpp
+	Robot.hpp
+	Robot.cpp
+	
+	["Levels"]
+	(source)
+	Level.hpp
+	LevelList.hpp
+	ShipLevel.hpp
+	ShipLevel.cpp
+	ShipBuildingArea.hpp
+	ShipBuildingArea.cpp
+	Level1.hpp
+	Level1.cpp
+	
+	["Audio"]
+	(source)
+	MusicPlayer.hpp
+	MusicPlayer.cpp
+	SoundEffect.hpp
+	SoundEffect.cpp
+
+	["Video"]
+	(source)
+	Video.hpp
+	Video.cpp
+	
+	["Puzzle"]
+	(source)
+	Puzzle.hpp
+	FlickableObject.hpp
+	FlickableObject.cpp
+	BuildPiece.hpp
+	BuildPiece.cpp
+	BuildPieceSet.hpp
+	BuildPieceSet.cpp
+	RobotBuildingPuzzle.hpp
+	RobotBuildingPuzzle.cpp
+	BuildPieceSilhouette.hpp
+	BuildPieceSilhouette.cpp
+	RubblePuzzle.hpp
+	RubblePuzzle.cpp
+	GravityHose.hpp
+	GravityHose.cpp
+	EscapePodBuildingPuzzle.hpp
+	EscapePodBuildingPuzzle.cpp
+}
+
+subprojects
+{
+    iwutil
+	derbh
+	iwgx
+	iwgraphics
+	iw2d
+	iwresmanager
+}
+
+assets
+{
+    (data)
+	[GLES1]
+    ConstructsResources-gles1.dz
+}
+
+deployments
+{
+    assets=GLES1
+}

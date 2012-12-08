@@ -1,0 +1,19 @@
+Number of Textures: 1
+environment/skies/SkyGradientDay1.png
+
+Map size: 5
+0
+0
+0
+0
+0
+
+Number of displayed tiles: 3
+Tile width: 1024
+Tile height: 768
+Starting position: 0
+Screen offset: -512, 334
+
+Number of decorative sprites: 0
+
+Number of interactive sprites: 0

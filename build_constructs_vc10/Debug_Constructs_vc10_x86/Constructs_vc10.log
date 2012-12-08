@@ -1,0 +1,59 @@
+﻿Build started 22/06/2012 08:01:38.
+     1>Project "C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\Constructs_vc10.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug_Constructs_vc10_x86\Constructs_vc10.unsuccessfulbuild".
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         C:\Marmalade\5.2\s3e\bin\CL.exe /c /I"C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source" /Ic:/marmalade/5.2/modules/iwutil/h /Ic:/marmalade/5.2/modules/derbh/h /Ic:/marmalade/5.2/modules/iwgeom/h /Ic:/marmalade/5.2/modules/iwresmanager/h /Ic:/marmalade/5.2/modules/iwgl/h /Ic:/marmalade/5.2/modules/iwgx/h /Ic:/marmalade/5.2/modules/iwgraphics/h /Ic:/marmalade/5.2/modules/iwgxfont/h /Ic:/marmalade/5.2/modules/iw2d/h /Ic:/marmalade/5.2/s3e/h /Ic:/marmalade/5.2/s3e/h/ext /Ic:/marmalade/5.2/s3e/h/std /Ic:/marmalade/5.2/s3e/h/std/c++ /Ic:/marmalade/5.2/s3e/h/ext_legacy /Ic:/marmalade/5.2/s3e/h/legacy /I. /ZI /nologo /W3 /WX- /Od /Oy- /X /Gm /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug_Constructs_vc10_x86\\" /Fd"Debug_Constructs_vc10_x86\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "C:/Users/ET/Documents/Universal Story/Universal Story/jj/constructs/source/Alien.cpp" /S3Eproject /J /FI"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\temp_defines_debug.h"
+         Alien.cpp
+       Link:
+         C:\Marmalade\5.2\s3e\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug_Constructs_vc10_x86\Constructs.s86" /INCREMENTAL /NOLOGO /LIBPATH:c:/marmalade/5.2/modules/iwutil/lib/x86 /LIBPATH:c:/marmalade/5.2/modules/derbh/lib/x86 /LIBPATH:c:/marmalade/5.2/modules/iwgeom/lib/x86 /LIBPATH:c:/marmalade/5.2/modules/iwresmanager/lib/x86 /LIBPATH:c:/marmalade/5.2/modules/iwgx/atitools /LIBPATH:c:/marmalade/5.2/modules/iwgx/lib/x86 /LIBPATH:c:/marmalade/5.2/modules/iwgl/lib/x86 /LIBPATH:c:/marmalade/5.2/modules/iwgraphics/lib/x86 /LIBPATH:c:/marmalade/5.2/modules/iwgxfont/lib/x86 /LIBPATH:c:/marmalade/5.2/modules/iw2d/lib/x86 /LIBPATH:c:/marmalade/5.2/s3e/lib/x86 vc6_compat.lib iwutil_d.lib derbh_d.lib iwgeom_d.lib iwresmanager_d.lib ATI_Compress_MT_VC7.lib iwgx_d.lib iwgl_d.lib iwgraphics_d.lib iwgxfont_d.lib iw2d_d.lib s3e_cpp_vc8_d.lib s3e_d.lib c:/marmalade/5.2/s3e/lib/x86/s3e_api.lib /NODEFAULTLIB:libcmt /MANIFEST:NO /DEBUG /PDB:"C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\Debug_Constructs_vc10_x86\Constructs.pdb" /SUBSYSTEM:WINDOWS /OPT:NOREF /OPT:NOICF /TLBID:1 /ENTRY:"DllEntryPoint" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug_Constructs_vc10_x86\Constructs.lib" /MACHINE:X86 /DLL Debug_Constructs_vc10_x86\ShipLevel.obj
+         Debug_Constructs_vc10_x86\CircularButton.obj
+         Debug_Constructs_vc10_x86\Input.obj
+         Debug_Constructs_vc10_x86\BuildPieceSet.obj
+         Debug_Constructs_vc10_x86\Robot.obj
+         Debug_Constructs_vc10_x86\BuildPieceSilhouette.obj
+         Debug_Constructs_vc10_x86\Material.obj
+         Debug_Constructs_vc10_x86\TestState.obj
+         Debug_Constructs_vc10_x86\main.obj
+         Debug_Constructs_vc10_x86\BuildPiece.obj
+         Debug_Constructs_vc10_x86\Sprite.obj
+         Debug_Constructs_vc10_x86\GravityHose.obj
+         Debug_Constructs_vc10_x86\GraphicsObject.obj
+         Debug_Constructs_vc10_x86\Video.obj
+         Debug_Constructs_vc10_x86\RobotBuildingPuzzle.obj
+         Debug_Constructs_vc10_x86\Level1.obj
+         Debug_Constructs_vc10_x86\ScrollingLayer.obj
+         Debug_Constructs_vc10_x86\RubblePuzzle.obj
+         Debug_Constructs_vc10_x86\TitleState.obj
+         Debug_Constructs_vc10_x86\EscapePodBuildingPuzzle.obj
+         Debug_Constructs_vc10_x86\MusicPlayer.obj
+         Debug_Constructs_vc10_x86\Touch.obj
+         Debug_Constructs_vc10_x86\QuadButton.obj
+         Debug_Constructs_vc10_x86\DerbhAutoInit.obj
+         Debug_Constructs_vc10_x86\Quad.obj
+         Debug_Constructs_vc10_x86\AnimatedSprite.obj
+         Debug_Constructs_vc10_x86\SoundEffect.obj
+         Debug_Constructs_vc10_x86\PlayState.obj
+         Debug_Constructs_vc10_x86\Game.obj
+         Debug_Constructs_vc10_x86\FlickableObject.obj
+         Debug_Constructs_vc10_x86\Alien.obj
+         Debug_Constructs_vc10_x86\ShipBuildingArea.obj
+         Debug_Constructs_vc10_x86\MenuState.obj  /include:_IwMain /include:_raise /include:_DllEntryPoint@12
+         Constructs_vc10.vcxproj -> C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\Debug_Constructs_vc10_x86\Constructs.s86
+       PostBuildEvent:
+         echo C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py "C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\Debug_Constructs_vc10_x86\Constructs.s86"
+         chdir /d "c:\marmalade\5.2\s3e\tools"
+         C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py "C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\Debug_Constructs_vc10_x86\Constructs.s86"
+         
+         :VCEnd
+         C:\Marmalade\5.2\s3e\python\python.exe .\process_map.py "C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\Debug_Constructs_vc10_x86\Constructs.s86"
+       FinalizeBuildStatus:
+         Deleting file "Debug_Constructs_vc10_x86\Constructs_vc10.unsuccessfulbuild".
+         Touching "Debug_Constructs_vc10_x86\Constructs_vc10.lastbuildstate".
+     1>Done Building Project "C:\Users\ET\Documents\Universal Story\Universal Story\jj\constructs\build_constructs_vc10\Constructs_vc10.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.37

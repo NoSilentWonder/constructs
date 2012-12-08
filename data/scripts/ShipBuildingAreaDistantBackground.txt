@@ -1,0 +1,54 @@
+Number of Textures: 8
+environment/background/distant_bg1.png
+environment/background/distant_bg2.png
+environment/background/distant_bg3.png
+environment/background/distant_bg4.png
+environment/background/distant_bg5.png
+environment/background/distant_bg6.png
+environment/background/distant_bg7.png
+environment/background/distant_bg8.png
+
+Map size: 33
+1
+5
+6
+4
+7
+4
+2
+1
+0
+3
+2
+5
+8
+6
+4
+7
+4
+1
+5
+0
+3
+4
+1
+7
+6
+4
+3
+4
+6
+1
+0
+7
+2
+
+Number of displayed tiles: 5
+Tile width: 512
+Tile height: 512
+Starting position: 0
+Screen offset: -256, 286
+
+Number of decorative sprites: 0
+
+Number of interactive sprites: 0

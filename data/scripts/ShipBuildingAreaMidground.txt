@@ -1,0 +1,143 @@
+Number of Textures: 12
+environment/tiles/midground1.png
+environment/tiles/midground2.png
+environment/tiles/midground3.png
+environment/tiles/midground4.png
+environment/tiles/midground5.png
+environment/tiles/midground6.png
+environment/tiles/midground7.png
+obj/Decorative/FloatingRock3.png
+obj/Decorative/Forest1.png
+obj/Decorative/Forest2.png
+obj/Decorative/Forest3.png
+obj/Decorative/Forest4.png
+
+Map size: 13
+1
+6
+3
+2
+5
+6
+4
+0
+1
+1
+2
+3
+0
+
+Number of displayed tiles: 5
+Tile width: 512
+Tile height: 256
+Starting position: 0
+Screen offset: -500, 542
+
+Number of decorative sprites: 13
+
+map position: 2
+sprite width: 200
+sprite height: 200
+x offset: -70
+y offset: -50
+obj/Decorative/Forest3.png
+
+map position: 1
+sprite width: 200
+sprite height: 200
+x offset: 90
+y offset: -20
+obj/Decorative/Forest1.png
+
+map position: 3
+sprite width: 150
+sprite height: 150
+x offset: -70
+y offset: -30
+obj/Decorative/Forest2.png
+
+map position: 3
+sprite width: 150
+sprite height: 150
+x offset: 170
+y offset: -20
+obj/Decorative/Forest1.png
+
+map position: 3
+sprite width: 50
+sprite height: 100
+x offset: 0
+y offset: -200
+obj/Decorative/FloatingRock3.png
+
+map position: 5
+sprite width: 150
+sprite height: 150
+x offset: 170
+y offset: -20
+obj/Decorative/Forest3.png
+
+map position: 5
+sprite width: 50
+sprite height: 100
+x offset: 0
+y offset: -250
+obj/Decorative/FloatingRock3.png
+
+map position: 6
+sprite width: 50
+sprite height: 100
+x offset: 0
+y offset: -200
+obj/Decorative/FloatingRock3.png
+
+map position: 6
+sprite width: 150
+sprite height: 150
+x offset: -200
+y offset: -20
+obj/Decorative/Forest4.png
+
+map position: 6
+sprite width: 150
+sprite height: 150
+x offset: -20
+y offset: -70
+obj/Decorative/Forest2.png
+
+map position: 7
+sprite width: 150
+sprite height: 150
+x offset: 0
+y offset: -60
+obj/Decorative/Forest1.png
+
+map position: 7
+sprite width: 50
+sprite height: 100
+x offset: 170
+y offset: -200
+obj/Decorative/FloatingRock2.png
+
+map position: 8
+sprite width: 30
+sprite height: 80
+x offset: 70
+y offset: -200
+obj/Decorative/FloatingRock2.png
+
+map position: 10
+sprite width: 150
+sprite height: 150
+x offset: -200
+y offset: -60
+obj/Decorative/Forest4.png
+
+map position: 10
+sprite width: 150
+sprite height: 150
+x offset: 200
+y offset: -60
+obj/Decorative/Forest3.png
+
+Number of interactive sprites: 0
